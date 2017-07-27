@@ -4,6 +4,7 @@ package com.nabwera.retrofit_send_objects.api.model;
  * Created by nabwera on 27/07/2017.
  */
 
+// Instantiating a new User object fills its properties with values for id, name, email age and topics.
 public class User {
 
     private Integer id;

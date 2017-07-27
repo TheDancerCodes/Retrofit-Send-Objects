@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         Retrofit retrofit = builder.build();
 
         // get client & call object for the request
+        // Calling the service method createAccount will convert the properties of user into JSON representation.
         UserClient client = retrofit.create(UserClient.class);
         Call<User> call = client.createAccount(user);
 

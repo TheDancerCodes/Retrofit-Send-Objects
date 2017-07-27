@@ -12,6 +12,7 @@ import retrofit2.http.POST;
 
 public interface UserClient {
 
-    @POST
+    // Use @Body to declare User object as request body
+    @POST("user")
     Call<User> createAccount(@Body User user);
 }
